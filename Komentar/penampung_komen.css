@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    background: white;
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: medium;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .cov_comentHolder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        height: 100dvh;
+    }
+
+    .cov_comentHolder form [type='text'] {
+        color: #000032;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .cov_comentHolder form textarea {
+        color: #000032;
+        outline: none;
+        padding: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: small;
+        border-radius: 10px;
+        background: white;
+    }
+
+    .cov_comentHolder form [type='submit'] {
+        color: #000032;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        padding: 5px 10px;
+    }
+     .cov_comentHolder form [type='submit']:hover {
+        background: #000064;
+        color: white;
+        transition: .3s ease-in-out;
+     }
+}
+@media (max-width: 768px) {
+    html {
+        font-size: small;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .cov_comentHolder {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        height: 100dvh;
+    }
+
+    .cov_comentHolder form [type='text'] {
+        color: #000032;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .cov_comentHolder form textarea {
+        color: #000032;
+        outline: none;
+        padding: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: small;
+        border-radius: 10px;
+        background: white;
+    }
+
+    .cov_comentHolder form [type='submit'] {
+        color: #000032;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        padding: 5px 10px;
+    }
+     .cov_comentHolder form [type='submit']:hover {
+        background: #000064;
+        color: white;
+        transition: .3s ease-in-out;
+     }
+}

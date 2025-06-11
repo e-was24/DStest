@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    color: black;
+}
+
+html {
+    background:  #ffffff;
+}
+
+@media (min-width: 1200px) {
+    .navbar {
+        position: fixed;
+        background: linear-gradient(to bottom, #0000005e, transparent);
+        width: fit-content;
+        height: 100dvh;
+        
+    }
+
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+        padding: 0 10px;
+        height: 20dvh;
+    }
+
+    .navbar .logo h3{
+        color: white;
+     }
+    .navbar .logo h3 span {
+        color: gold;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px 0;
+        color: white;
+        height: 50dvh;
+        /* background: #000032; */
+    }
+
+    .navbar ul li {
+        padding: 10px 0;
+        color: white;
+        font-size: small;
+        text-align: center;
+        cursor: pointer;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar ul li:hover {
+        background: white;
+        transition: .3s ease-in-out;
+    }
+
+    .navbar ul li a  {
+       display: flex;
+       justify-content: center;
+       gap: 10px;
+       align-items: center;
+    }
+    .navbar ul li a  .teks-khusus {
+       color: white;
+    }
+    .navbar ul li:hover a  .teks-khusus{
+        color: blue;
+        transition: .3s ease-in-out;
+    }
+    .navbar ul li:hover a {
+        color: #000032;
+        transition: .3s ease-in-out;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+
+    .navbar ul li a svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        stroke: white;
+    }
+
+    .navbar ul li:hover a svg {
+        transition: .3s ease-in-out;
+        stroke: blue;
+    }
+
+    .media {
+        margin-top: 10px;
+        height: fit-content;
+    }
+
+    .media .medsos li {
+        width: fit-content;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .media .medsos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        padding: 0rem 5px;
+    }
+
+}
+
+/* andro versiom */
+
+@media (max-width: 768px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .navbar {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #00000068;
+        width: 100dvw;
+        padding: 1dvw 10dvw;
+        z-index: 1000;
+        height: fit-content;
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+
+    .navbar .logo h3 span {
+        display: none;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+
+    .navbar ul li {
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .navbar ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 50%;
+        width: 50px;
+        text-decoration: none;
+    }
+
+    .navbar ul li:hover a {
+        transition: .3s ease-in-out;
+        background: white;
+        padding: 10px;
+        border-radius: 50%;
+
+    }
+
+    .navbar ul li a svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        stroke: white;
+    }
+
+    .navbar ul li:hover a svg {
+        transition: .3s ease-in-out;
+        stroke: blue;
+    }
+
+    .teks-khusus {
+        font-size: .5em;
+        color: white;
+    }
+
+    .navbar ul li:hover .teks-khusus {
+        color: blue;
+    }
+
+
+    .media {
+        display: none;
+    }
+}
